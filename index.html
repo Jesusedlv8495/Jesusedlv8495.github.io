@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jesús de León — Periodista</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <h1>Jesús de León</h1>
+      <span class="tagline">Periodista &amp; Escritor</span>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="#articulos">Artículos</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN -->
+  <main id="articulos">
+
+    <!-- Artículo destacado (el más reciente) -->
+    <section class="featured">
+      <div class="label">Último artículo</div>
+      <h2><a href="articles/first-article.html">Reemplaza esto con el título de tu artículo</a></h2>
+      <div class="meta">2 de mayo, 2026 &nbsp;·&nbsp; Categoría</div>
+      <p>
+        Escribe aquí una breve introducción a tu artículo — una o dos oraciones que
+        enganchen al lector y le den una razón para seguir leyendo. Sé conciso y directo.
+      </p>
+      <a href="articles/first-article.html" class="read-more">Leer artículo &rarr;</a>
+    </section>
+
+    <!-- Archivo de artículos anteriores -->
+    <div class="section-title">Artículos anteriores</div>
+
+    <div class="article-list">
+
+      <!-- Duplica este bloque cada semana con el nuevo artículo -->
+      <div class="article-item">
+        <div class="date-block">
+          <span class="day">26</span>
+          Abr&nbsp;2026
+        </div>
+        <div>
+          <span class="tag">Categoría</span>
+          <h3><a href="#">Título del artículo</a></h3>
+          <p class="snippet">Un breve resumen de una o dos oraciones sobre el tema del artículo.</p>
+        </div>
+      </div>
+
+      <div class="article-item">
+        <div class="date-block">
+          <span class="day">19</span>
+          Abr&nbsp;2026
+        </div>
+        <div>
+          <span class="tag">Categoría</span>
+          <h3><a href="#">Título del artículo</a></h3>
+          <p class="snippet">Un breve resumen de una o dos oraciones sobre el tema del artículo.</p>
+        </div>
+      </div>
+
+      <div class="article-item">
+        <div class="date-block">
+          <span class="day">12</span>
+          Abr&nbsp;2026
+        </div>
+        <div>
+          <span class="tag">Categoría</span>
+          <h3><a href="#">Título del artículo</a></h3>
+          <p class="snippet">Un breve resumen de una o dos oraciones sobre el tema del artículo.</p>
+        </div>
+      </div>
+
+      <div class="article-item">
+        <div class="date-block">
+          <span class="day">5</span>
+          Abr&nbsp;2026
+        </div>
+        <div>
+          <span class="tag">Categoría</span>
+          <h3><a href="#">Título del artículo</a></h3>
+          <p class="snippet">Un breve resumen de una o dos oraciones sobre el tema del artículo.</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- SOBRE MÍ -->
+  <div class="about-strip" id="sobre-mi">
+    <div class="about-strip-inner">
+      <div class="initials">JdL</div>
+      <p>
+        <strong>Jesús de León</strong> es periodista especializado en [tu área — ej. política,
+        cultura, tecnología]. Publica un nuevo artículo cada semana. Para contactarlo o
+        proponer una historia, escribe a
+        <a href="mailto:sodeve619@gmail.com" style="color:#e88;">sodeve619@gmail.com</a>.
+      </p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer id="contacto">
+    &copy; <span id="year"></span> Jesús de León &nbsp;·&nbsp; Todos los derechos reservados
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
