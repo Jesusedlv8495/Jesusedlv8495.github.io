@@ -60,6 +60,26 @@
 
   </div>
 
+  <!-- SHARE BUTTONS -->
+  <div class="share-bar">
+    <span>Compartir</span>
+    <a class="share-btn x"        id="share-x"       href="#" target="_blank" rel="noopener">X</a>
+    <a class="share-btn whatsapp" id="share-whatsapp" href="#" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="share-btn facebook" id="share-facebook" href="#" target="_blank" rel="noopener">Facebook</a>
+    <a class="share-btn linkedin" id="share-linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+
+  <script>
+    (function() {
+      var url   = encodeURIComponent(location.href);
+      var title = encodeURIComponent(document.title);
+      document.getElementById('share-x').href        = 'https://twitter.com/intent/tweet?url=' + url + '&text=' + title;
+      document.getElementById('share-whatsapp').href  = 'https://api.whatsapp.com/send?text=' + title + '%20' + url;
+      document.getElementById('share-facebook').href  = 'https://www.facebook.com/sharer/sharer.php?u=' + url;
+      document.getElementById('share-linkedin').href  = 'https://www.linkedin.com/sharing/share-offsite/?url=' + url;
+    })();
+  </script>
+
   <!-- ABOUT STRIP -->
   <div class="about-strip">
     <div class="about-strip-inner">
