@@ -222,6 +222,40 @@ main {
   margin-bottom: 0.3rem;
 }
 
+/* ── TOPICS GRID ── */
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.topic-item {
+  border: 1px solid var(--light-gray);
+  border-top: 3px solid var(--accent);
+  padding: 1.2rem 1.4rem;
+  background: #fff;
+}
+
+.topic-label {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 0.5rem;
+}
+
+.topic-item p {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--gray);
+  line-height: 1.5;
+  margin: 0;
+}
+
 /* ── ABOUT STRIP ── */
 .about-strip {
   background: var(--dark);
