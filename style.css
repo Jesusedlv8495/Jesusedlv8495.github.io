@@ -374,6 +374,34 @@ footer {
   color: var(--gray);
 }
 
+/* ── CONTACT SECTION ── */
+.contact-section {
+  background: #fff;
+  padding: 3rem 2rem;
+  border-top: 1px solid var(--light-gray);
+}
+
+.contact-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.contact-links a {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--black);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-links a:hover { color: var(--accent); }
+
 /* ── SHARE BUTTONS ── */
 .share-bar {
   max-width: 680px;
