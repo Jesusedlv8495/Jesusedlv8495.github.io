@@ -222,38 +222,31 @@ main {
   margin-bottom: 0.3rem;
 }
 
-/* ── TOPICS GRID ── */
-.topics-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 1.2rem;
+/* ── TOPICS TAGS ── */
+.topics-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
   margin-bottom: 1rem;
 }
 
-.topic-item {
-  border: 1px solid var(--light-gray);
-  border-top: 3px solid var(--accent);
-  padding: 1.2rem 1.4rem;
-  background: #fff;
-}
-
-.topic-label {
-  display: block;
+.topic-tag {
   font-family: var(--font-sans);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
   color: var(--black);
-  margin-bottom: 0.5rem;
+  background: #fff;
+  border: 1.5px solid var(--black);
+  padding: 0.5rem 1.1rem;
+  border-radius: 2px;
+  transition: background 0.2s, color 0.2s;
+  cursor: default;
 }
 
-.topic-item p {
-  font-family: var(--font-sans);
-  font-size: 0.85rem;
-  color: var(--gray);
-  line-height: 1.5;
-  margin: 0;
+.topic-tag:hover {
+  background: var(--black);
+  color: #fff;
 }
 
 /* ── ABOUT STRIP ── */
