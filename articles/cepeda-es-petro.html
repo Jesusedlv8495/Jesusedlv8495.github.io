@@ -68,7 +68,8 @@
     <a class="share-btn x"        id="share-x"       href="#" target="_blank" rel="noopener">X</a>
     <a class="share-btn whatsapp" id="share-whatsapp" href="#" target="_blank" rel="noopener">WhatsApp</a>
     <a class="share-btn facebook" id="share-facebook" href="#" target="_blank" rel="noopener">Facebook</a>
-    <a class="share-btn linkedin" id="share-linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="share-btn linkedin"   id="share-linkedin"   href="#" target="_blank" rel="noopener">LinkedIn</a>
+    <button class="share-btn instagram" id="share-instagram" onclick="copyLink(this)">Instagram</button>
   </div>
 
   <script>
@@ -80,6 +81,14 @@
       document.getElementById('share-facebook').href  = 'https://www.facebook.com/sharer/sharer.php?u=' + url;
       document.getElementById('share-linkedin').href  = 'https://www.linkedin.com/sharing/share-offsite/?url=' + url;
     })();
+
+    function copyLink(btn) {
+      navigator.clipboard.writeText(location.href).then(function() {
+        var original = btn.textContent;
+        btn.textContent = '¡Copiado!';
+        setTimeout(function() { btn.textContent = original; }, 2000);
+      });
+    }
   </script>
 
   <!-- ABOUT STRIP -->

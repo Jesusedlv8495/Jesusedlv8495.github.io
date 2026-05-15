@@ -409,6 +409,7 @@ footer {
 .share-btn.whatsapp { background: #25D366; color: #fff; }
 .share-btn.facebook { background: #1877F2; color: #fff; }
 .share-btn.linkedin { background: #0A66C2; color: #fff; }
+.share-btn.instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: #fff; }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 540px) {
