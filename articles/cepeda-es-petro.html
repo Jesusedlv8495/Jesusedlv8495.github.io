@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¿Cepeda es Petro? — Jesús de León</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <!-- HEADER DEL ARTÍCULO -->
+  <div class="article-page-header">
+    <div class="article-page-header-inner">
+      <a href="../index.html" class="back-link">← Volver al inicio</a>
+      <h1>¿Cepeda es Petro?</h1>
+      <div class="meta">15 de mayo, 2026 &nbsp;·&nbsp; Por Jesús de León &nbsp;·&nbsp; Política colombiana</div>
+    </div>
+  </div>
+
+  <!-- CUERPO DEL ARTÍCULO -->
+  <div class="article-body">
+
+    <p>
+      En la política colombiana existe una tendencia constante a reducir los matices.
+    </p>
+
+    <p>
+      Todo termina convertido en bloques absolutos. O eres "uribista" o "petrista" (la forma más personalista de reducir las ideologías políticas), derecha o izquierda, amigo o enemigo.
+    </p>
+
+    <p>
+      En esa simplificación, Iván Cepeda suele ser leído como una extensión automática del actual presidente Gustavo Petro. Pero, aunque comparten escenarios políticos y algunas agendas comunes, asumir que son lo mismo ignora diferencias importantes en sus trayectorias, formas de hacer política y posiciones dentro de la izquierda colombiana.
+    </p>
+
+    <p>
+      Quizá el punto de mayor cercanía entre ambos ha sido la llamada Paz Total. Sin embargo, incluso allí, Cepeda ha mantenido una línea propia relacionada con los procesos de negociación y construcción de paz mucho antes de la llegada de Petro al poder.
+    </p>
+
+    <p>
+      No es algo nuevo. Cepeda también tuvo un papel cercano al gobierno de Juan Manuel Santos durante las negociaciones con las FARC. Su relación con los procesos de paz ha sido más estructural que coyuntural y responde a una trayectoria política ligada a los derechos humanos, las víctimas y la salida negociada al conflicto armado.
+    </p>
+
+    <p>
+      Petro, en cambio, ha construido una figura mucho más personalista y mediática. Su liderazgo depende en gran medida de su capacidad de ocupar el centro de la conversación pública. Durante su etapa como alcalde de Bogotá, por ejemplo, su capital político dependió enteramente de su capacidad de convocatoria a la plaza pública para hacer frente al proceso de destitución que llevaba en ese entonces procurador Alejandro Ordóñez.
+    </p>
+
+    <p>
+      Cepeda rara vez ha jugado ese papel. De hecho, una de sus mayores repercusiones mediáticas ocurrió cuando impulsó el debate de control político contra Álvaro Uribe, un episodio que terminó marcando buena parte de la confrontación política contemporánea en Colombia.
+    </p>
+
+    <p>
+      Incluso dentro de la izquierda existen diferencias históricas relevantes. Mientras Petro militaba en el Polo Democrático desde sectores más confrontacionales, Cepeda mantenía cercanía con corrientes más institucionales y moderadas dentro del partido, asociadas en su momento al llamado "gavirismo".
+    </p>
+
+    <p>
+      Eso no significa que sean opuestos. Significa, más bien, que pertenecen a tradiciones distintas dentro de una izquierda colombiana que muchas veces se analiza como si fuera homogénea.
+    </p>
+
+    <p>
+      Y quizá ahí está el verdadero problema del debate público colombiano: la incapacidad de entender los matices políticos sin convertir cualquier cercanía en una identidad absoluta.
+    </p>
+
+  </div>
+
+  <!-- SHARE BUTTONS -->
+  <div class="share-bar">
+    <span>Compartir</span>
+    <a class="share-btn x"        id="share-x"       href="#" target="_blank" rel="noopener">X</a>
+    <a class="share-btn whatsapp" id="share-whatsapp" href="#" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="share-btn facebook" id="share-facebook" href="#" target="_blank" rel="noopener">Facebook</a>
+    <a class="share-btn linkedin" id="share-linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+
+  <script>
+    (function() {
+      var url   = encodeURIComponent(location.href);
+      var title = encodeURIComponent(document.title);
+      document.getElementById('share-x').href        = 'https://twitter.com/intent/tweet?url=' + url + '&text=' + title;
+      document.getElementById('share-whatsapp').href  = 'https://api.whatsapp.com/send?text=' + title + '%20' + url;
+      document.getElementById('share-facebook').href  = 'https://www.facebook.com/sharer/sharer.php?u=' + url;
+      document.getElementById('share-linkedin').href  = 'https://www.linkedin.com/sharing/share-offsite/?url=' + url;
+    })();
+  </script>
+
+  <!-- ABOUT STRIP -->
+  <div class="about-strip">
+    <div class="about-strip-inner">
+      <div class="initials">JdL</div>
+      <p>
+        <strong>Jesús de León</strong> es comunicador social y periodista con más de cinco años de experiencia en comunicación estratégica. Magíster en Derechos Humanos y especialista en Derecho Internacional Humanitario.
+        <a href="../index.html" style="color:#e88;">Ver todos los artículos →</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; <span id="year"></span> Jesús de León &nbsp;·&nbsp; Todos los derechos reservados
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
