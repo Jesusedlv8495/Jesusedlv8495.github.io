@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>León XIV contra Peter Thiel: la guerra filosófica detrás de la IA — Jesús de León</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <!-- HEADER DEL ARTÍCULO -->
+  <div class="article-page-header">
+    <div class="article-page-header-inner">
+      <a href="../index.html" class="back-link">← Volver al inicio</a>
+      <h1>León XIV contra Peter Thiel: la guerra filosófica detrás de la IA</h1>
+      <div class="meta">1 de junio, 2026 &nbsp;·&nbsp; Por Jesús de León &nbsp;·&nbsp; Tecnología y sociedad</div>
+    </div>
+  </div>
+
+  <!-- CUERPO DEL ARTÍCULO -->
+  <div class="article-body">
+
+    <p>
+      La ciencia ficción nos enseñó durante décadas a tenerle miedo a la inteligencia artificial. Terminator, <em>2001: Odisea del Espacio</em>, <em>The Matrix</em>. Todas construyeron la misma idea: las máquinas eventualmente terminarían controlando al ser humano.
+    </p>
+
+    <p>
+      Ese miedo parecía exagerado. Ahora que la IA entró en todos los aspectos de la vida cotidiana, la discusión dejó de ser ficción y se convirtió en un debate ético, político y hasta espiritual. Y ese debate tiene protagonistas concretos.
+    </p>
+
+    <h2>El tecnócrata</h2>
+
+    <p>
+      Peter Thiel, fundador de PayPal y principal figura ideológica detrás de Palantir, publicó hace seis meses un manifiesto donde defendía que las empresas de software e inteligencia artificial no solo crearán el futuro, sino que tendrán la responsabilidad de dirigirlo. Para Thiel, Silicon Valley ya no es únicamente una industria. Es el nuevo centro de poder del mundo.
+    </p>
+
+    <p>
+      Thiel lleva años construyendo un discurso cada vez más radical. Habla constantemente del "anticristo", aunque no en el sentido bíblico tradicional: para él, el término designa cualquier movimiento que, según su visión, frene el progreso tecnológico y civilizacional de Occidente. El globalismo, la agenda woke, los organismos internacionales e incluso figuras como Greta Thunberg aparecen frecuentemente en sus críticas.
+    </p>
+
+    <p>
+      Esa visión también se refleja dentro de Palantir. Alex Karp, CEO de la compañía, publicó recientemente un manifiesto de 22 puntos defendiendo el papel moral y político de las empresas tecnológicas en el nuevo orden mundial. El mensaje es claro: las compañías de IA ya no quieren limitarse a crear herramientas. Quieren definir la dirección de la sociedad.
+    </p>
+
+    <h2>El humanista</h2>
+
+    <p>
+      Ahí es donde aparece el papa León XIV. Su última encíclica parece responder directamente a esa visión tecnocrática. Sin mencionar explícitamente a Thiel ni a Palantir, el documento critica la idea de reducir al ser humano a datos, eficiencia y automatización. León XIV insiste en que ninguna inteligencia artificial puede reemplazar la dignidad humana, la conciencia moral o la libertad individual.
+    </p>
+
+    <p>
+      El choque entre ambos mundos no es realmente político. Es una discusión sobre qué significa ser humano en la era de la IA. Mientras Thiel imagina un futuro dirigido por élites tecnológicas capaces de optimizar la sociedad, León XIV defiende una visión humanista donde la tecnología debe seguir estando al servicio de las personas y no al revés.
+    </p>
+
+    <p>
+      Quizá esa sea la verdadera discusión del siglo XXI: no si la IA será más poderosa, sino quién decidirá cómo debe usarse y qué lugar seguirá ocupando el ser humano dentro de ese futuro.
+    </p>
+
+  </div>
+
+  <!-- SHARE BUTTONS -->
+  <div class="share-bar">
+    <span>Compartir</span>
+    <a class="share-btn x"        id="share-x"       href="#" target="_blank" rel="noopener">X</a>
+    <a class="share-btn whatsapp" id="share-whatsapp" href="#" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="share-btn facebook" id="share-facebook" href="#" target="_blank" rel="noopener">Facebook</a>
+    <a class="share-btn linkedin" id="share-linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
+    <button class="share-btn instagram" id="share-instagram" onclick="copyLink(this)">Instagram</button>
+  </div>
+
+  <script>
+    (function() {
+      var url   = encodeURIComponent(location.href);
+      var title = encodeURIComponent(document.title);
+      document.getElementById('share-x').href        = 'https://twitter.com/intent/tweet?url=' + url + '&text=' + title;
+      document.getElementById('share-whatsapp').href  = 'https://api.whatsapp.com/send?text=' + title + '%20' + url;
+      document.getElementById('share-facebook').href  = 'https://www.facebook.com/sharer/sharer.php?u=' + url;
+      document.getElementById('share-linkedin').href  = 'https://www.linkedin.com/sharing/share-offsite/?url=' + url;
+    })();
+
+    function copyLink(btn) {
+      navigator.clipboard.writeText(location.href).then(function() {
+        var original = btn.textContent;
+        btn.textContent = '¡Copiado!';
+        setTimeout(function() { btn.textContent = original; }, 2000);
+      });
+    }
+  </script>
+
+  <!-- ABOUT STRIP -->
+  <div class="about-strip">
+    <div class="about-strip-inner">
+      <div class="initials">JdL</div>
+      <p>
+        <strong>Jesús de León</strong> es comunicador social y periodista con más de cinco años de experiencia en comunicación estratégica. Magíster en Derechos Humanos y especialista en Derecho Internacional Humanitario.
+        <a href="../index.html" style="color:#e88;">Ver todos los artículos →</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; <span id="year"></span> Jesús de León &nbsp;·&nbsp; Todos los derechos reservados
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
