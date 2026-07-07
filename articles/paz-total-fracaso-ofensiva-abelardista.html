@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paz Total: fracaso y la nueva ofensiva abelardista — Jesús de León</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <!-- HEADER DEL ARTÍCULO -->
+  <div class="article-page-header">
+    <div class="article-page-header-inner">
+      <a href="../index.html" class="back-link">← Volver al inicio</a>
+      <h1>Paz Total: fracaso y la nueva ofensiva abelardista</h1>
+      <div class="meta">6 de julio, 2026 &nbsp;·&nbsp; Por Jesús de León &nbsp;·&nbsp; Política colombiana</div>
+    </div>
+  </div>
+
+  <!-- CUERPO DEL ARTÍCULO -->
+  <div class="article-body">
+
+    <p>
+      El derrumbe de la principal apuesta de seguridad de Gustavo Petro abre paso a un giro de mano dura. La pregunta de fondo es si el nuevo gobierno sabrá evitar los errores del pasado.
+    </p>
+
+    <p>
+      La Paz Total fue una de las banderas más defendidas por el gobierno Petro y, al mismo tiempo, una de las de fracaso más evidente. Durante el cuatrienio, el Ejecutivo montó todo un aparato para impulsar y celebrar sus supuestos éxitos; uno de sus principales voceros fue el entonces senador y candidato presidencial Iván Cepeda.
+    </p>
+
+    <p>
+      El Gobierno sostuvo que, por primera vez, se abrieron espacios inéditos para el cese de la violencia, y que la "paz urbana", con Medellín y Buenaventura como laboratorios, redujo de forma notable los homicidios en esas ciudades. Su propósito era ambicioso: disminuir la violencia mediante negociaciones simultáneas con guerrillas, grupos armados organizados y estructuras del crimen organizado, bajo la premisa de que el conflicto colombiano exigía una salida integral basada en el diálogo antes que en la confrontación militar. En la práctica, sin embargo, el balance ha sido desfavorable.
+    </p>
+
+    <p>
+      Allí nació uno de sus errores de fondo: no distinguir entre grupos armados organizados y bandas delincuenciales cuya actividad se reduce, por lo general, al microtráfico y la extorsión. Al meterlos en el mismo saco, la estrategia ignoró las dinámicas, los objetivos y el funcionamiento de los actores armados, cuyo control territorial va mucho más allá de las economías ilícitas.
+    </p>
+
+    <p>
+      Conviene precisar, como lo señala la Fundación Paz y Reconciliación, que la violencia no nació con la Paz Total. Es, más bien, la herencia de un Acuerdo de Paz con las antiguas FARC mal implementado y sin voluntad política suficiente durante el gobierno de Iván Duque (Pares).
+    </p>
+
+    <p>
+      Los datos, no obstante, muestran una expansión preocupante. Según La Silla Vacía, el Clan del Golfo creció un 32 %, la Segunda Marquetalia un 76 % y el Estado Mayor Central (EMC) un 56 %; su presencia pasó de poco menos de 180 municipios en 10 departamentos a más de 230 municipios en 16 departamentos (La Silla Vacía). A ello se suman el incumplimiento reiterado de los ceses al fuego por parte de varias de estas organizaciones y el crecimiento de las economías ilegales, factores que distintos sectores políticos, académicos y sociales señalan como prueba de la ineficacia de la estrategia.
+    </p>
+
+    <p>
+      En ese escenario se impone la propuesta del nuevo presidente electo, Abelardo de la Espriella, que se trata un retorno a la política de autoridad ofensiva estatal, el fortalecimiento de la Fuerza Pública y la recuperación del monopolio de la fuerza como condición previa a cualquier negociación.
+    </p>
+
+    <p>
+      El mediático abogado defiende un enfoque militarista frente a la violencia urbana y a los grupos armados. De entrada, niega la existencia de un conflicto armado: para él se trata de una amenaza terrorista, la misma tesis que sostuvo en su momento el expresidente Álvaro Uribe (Defensores de la Patria).
+    </p>
+
+    <p>
+      El debate, con todo, no debería plantearse como una disyuntiva entre negociar o combatir. La experiencia comparada demuestra que las políticas de seguridad más exitosas combinan presión militar efectiva, incentivos creíbles para la desmovilización, presencia institucional permanente y desarrollo económico en las regiones históricamente golpeadas por el conflicto.
+    </p>
+
+    <p>
+      Las dificultades de la Paz Total abren, así, un espacio político para propuestas que privilegian la autoridad estatal. Pero la viabilidad de la ofensiva abelardista dependerá menos de la intensidad con que se use la fuerza que de la capacidad del Estado para integrar seguridad, justicia, desarrollo territorial y legitimidad institucional. Si logra ese equilibrio, podría corregir varias de las deficiencias de la Paz Total; si se limita a una respuesta puramente coercitiva, corre el riesgo de reproducir los ciclos de violencia que Colombia arrastra desde hace décadas.
+    </p>
+
+  </div>
+
+  <!-- SHARE BUTTONS -->
+  <div class="share-bar">
+    <span>Compartir</span>
+    <a class="share-btn x"        id="share-x"       href="#" target="_blank" rel="noopener">X</a>
+    <a class="share-btn whatsapp" id="share-whatsapp" href="#" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="share-btn facebook" id="share-facebook" href="#" target="_blank" rel="noopener">Facebook</a>
+    <a class="share-btn linkedin" id="share-linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
+    <button class="share-btn instagram" id="share-instagram" onclick="copyLink(this)">Instagram</button>
+  </div>
+
+  <script>
+    (function() {
+      var url   = encodeURIComponent(location.href);
+      var title = encodeURIComponent(document.title);
+      document.getElementById('share-x').href        = 'https://twitter.com/intent/tweet?url=' + url + '&text=' + title;
+      document.getElementById('share-whatsapp').href  = 'https://api.whatsapp.com/send?text=' + title + '%20' + url;
+      document.getElementById('share-facebook').href  = 'https://www.facebook.com/sharer/sharer.php?u=' + url;
+      document.getElementById('share-linkedin').href  = 'https://www.linkedin.com/sharing/share-offsite/?url=' + url;
+    })();
+
+    function copyLink(btn) {
+      navigator.clipboard.writeText(location.href).then(function() {
+        var original = btn.textContent;
+        btn.textContent = '¡Copiado!';
+        setTimeout(function() { btn.textContent = original; }, 2000);
+      });
+    }
+  </script>
+
+  <!-- ABOUT STRIP -->
+  <div class="about-strip">
+    <div class="about-strip-inner">
+      <div class="initials">JdL</div>
+      <p>
+        <strong>Jesús de León</strong> es comunicador social y periodista con más de cinco años de experiencia en comunicación estratégica. Magíster en Derechos Humanos y especialista en Derecho Internacional Humanitario.
+        <a href="../index.html" style="color:#e88;">Ver todos los artículos →</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; <span id="year"></span> Jesús de León &nbsp;·&nbsp; Todos los derechos reservados
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
